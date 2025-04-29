@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mobile Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffafa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 20px;
+      background-color: #fefefe;
+    }
+    .intro-text {
+      max-width: 600px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #222;
+    }
+    header h3 {
+      margin: 20px 0;
+      font-size: 1.2rem;
+      color: #666;
+    }
+    header button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    header button:hover {
+      background-color: #0056b3;
+    }
+    header img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+    .video-section {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #000;
+    }
+    .video-section video {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 15px;
+    }
+    .features {
+      padding: 60px 20px;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+    }
+    .features h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #fff;
+    }
+    .feature-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .feature {
+      background-color: #fff;
+      color: #000;
+      padding: 20px;
+      border-radius: 15px;
+      width: 250px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+    .feature .icon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+    }
+    .feature h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+    .feature p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .specs-pricing {
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    .specs-pricing h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #222;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 1rem;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+    th, td {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+    thead {
+      background-color: #000;
+      color: white;
+    }
+    .pricing {
+      background-color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .pricing h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .pricing p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .pricing button {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header img {
+        margin: 20px 0 0;
+      }
+      .feature-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="intro-text">
+      <h1>Meet the Future</h1>
+      <h1>MyPhone X</h1>
+      <h3>Experience Speed, Power, and Innovation</h3>
+      <button>Pre-Order Now</button>
+    </div>
+    <img src="https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/article/Apple-iPhone-16-hero-240909_inline.jpg.large.jpg" alt="MyPhone X" />
+  </header>
+
+  <section class="video-section">
+    <video autoplay muted loop playsinline>
+      <source src="https://www.apple.com/105/media/ww/iphone/family/2025/e7ff365a-cb59-4ce9-9cdf-4cb965455b69/anim/welcome3/large_2x.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section class="features">
+    <h2>Features</h2>
+    <div class="feature-container">
+      <div class="feature">
+        <img src="https://layers-uploads-prod.s3.eu-west-2.amazonaws.com/df8cc267-b5ed-4a8d-af96-5a104dbe2c6c-Speed-Bento-card-insta.png" alt="Processor Icon" class="icon">
+        <h3>Ultra-fast Processor</h3>
+        <p>Lightning-fast performance for all your tasks.</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn.sketchrepo.com/images/2x/ios-camera-icon-sketch-freebie-y7.jpg" alt="Camera Icon" class="icon">
+        <h3>Stunning Camera</h3>
+        <p>Capture every moment in exceptional detail.</p>
+      </div>
+      <div class="feature">
+        <img src="https://9to5mac.com/wp-content/uploads/sites/6/2022/07/iphone-battery-mah-capacity-list.jpg?quality=82&strip=all&w=1600" alt="Battery Icon" class="icon">
+        <h3>Long Battery Life</h3>
+        <p>Stay powered all day with a single charge.</p>
+      </div>
+      <div class="feature">
+        <img src="https://user-images.githubusercontent.com/104615876/252124722-a688751d-eee3-497b-8f5a-09453d44241b.jpg" alt="Display Icon" class="icon">
+        <h3>Brilliant Display</h3>
+        <p>Vibrant colors and sharp visuals on a large screen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="specs-pricing">
+    <h2>Specifications</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Processor</td>
+          <td>A18 Bionic Chip with Neural Engine</td>
+        </tr>
+        <tr>
+          <td>Camera</td>
+          <td>108MP Main + 12MP Ultra-wide + 10MP Telephoto</td>
+        </tr>
+        <tr>
+          <td>Battery</td>
+          <td>5000 mAh with 65W fast charging</td>
+        </tr>
+        <tr>
+          <td>Display</td>
+          <td>6.8” Super Retina XDR OLED, 120Hz</td>
+        </tr>
+        <tr>
+          <td>Storage Options</td>
+          <td>128GB / 256GB / 512GB / 1TB</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="pricing">
+    <h2>Pricing</h2>
+    <p>Starting at <strong style="font-size: 1.8rem; color: #000;">₹79,999</strong></p>
+    <p>Available in Phantom Black, Alpine Blue, and Sunset Gold</p>
+    <button>Buy Now</button>
+  </section>
+
+</body>
+</html>
